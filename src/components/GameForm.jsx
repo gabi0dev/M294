@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { validateGame } from "../utils/validation";
 
-// Formular zum Erfassen/Bearbeiten eines Spiels.
-// - initialValues: Startwerte (beim Bearbeiten gefüllt, beim Neuanlegen leer)
-// - onSubmit: wird NUR aufgerufen, wenn die Validierung erfolgreich ist
+
 function GameForm({
   initialValues = { title: "", genre: "", platform: "", rating: 3, imageUrl: "", note: "" },
   onSubmit,
@@ -20,11 +18,11 @@ function GameForm({
   function handleSubmit(event) {
     event.preventDefault();
 
-    // 1. Client-seitige Validierung der Pflichtfelder
+
     const validationErrors = validateGame({ title, rating });
     setErrors(validationErrors);
 
-    // 2. Nur speichern, wenn keine Fehler vorliegen
+
     if (Object.keys(validationErrors).length === 0) {
       onSubmit({
         title: title.trim(),

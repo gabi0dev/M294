@@ -3,7 +3,7 @@ import { getGames, createGame } from "./gamesApi";
 
 describe("gamesApi", () => {
   beforeEach(() => {
-    // fetch wird gemockt -> kein echter Netzwerk-Aufruf im Test. <- Dieses File wurde mithilfe von Claude & ChatGPT korrigiert & ergänzt.
+    // fetch wird gemockt -> kein echter Netzwerk-Aufruf im Test. <- Dieses File wurde mithilfe von Claude & ChatGPT ergänzt.
     global.fetch = vi.fn().mockResolvedValue({
       ok: true,
       json: async () => [],

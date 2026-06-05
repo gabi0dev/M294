@@ -3,8 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { getGameById, updateGame } from "../api/gamesApi";
 import GameForm from "../components/GameForm";
 
-// Seite zum Bearbeiten eines Spiels (UPDATE).
-// Lädt das Spiel anhand der ID aus der URL.
+
 function EditGamePage() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -29,7 +28,6 @@ function EditGamePage() {
 
   async function handleUpdate(formData) {
     try {
-      // id behalten, restliche Felder aus dem Formular übernehmen
       await updateGame(id, { id: game.id, ...formData });
       navigate("/");
     } catch (err) {
