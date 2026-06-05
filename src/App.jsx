@@ -4,7 +4,10 @@ import GalleryPage from "./pages/GalleryPage";
 import AddGamePage from "./pages/AddGamePage";
 import EditGamePage from "./pages/EditGamePage";
 
-// Hier wird festgelegt, welche URL welche Seite anzeigt.
+
+
+
+
 function App() {
   return (
     <>

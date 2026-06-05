@@ -1,6 +1,7 @@
 // prüfung der felder -g
 
 export function validateGame({ title, rating }) {
+
   const errors = {};
 
   if (!title || title.trim() === "") {
@@ -13,4 +14,11 @@ export function validateGame({ title, rating }) {
   }
 
   return errors;
+
+
+
+
+
+
+  
 }
