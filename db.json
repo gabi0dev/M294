@@ -1,0 +1,31 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "genre": "Adventure",
+      "platform": "Switch",
+      "rating": 5,
+      "imageUrl": "",
+      "note": "Riesige offene Welt zum Erkunden."
+    },
+    {
+      "id": "2",
+      "title": "Hollow Knight",
+      "genre": "Metroidvania",
+      "platform": "PC",
+      "rating": 4,
+      "imageUrl": "",
+      "note": "Wunderschön, aber knackig schwer."
+    },
+    {
+      "id": "z1pzz_m",
+      "title": "Minecraft",
+      "genre": "Sandbox",
+      "platform": "PC",
+      "rating": 5,
+      "imageUrl": "https://graphicsprings.com/wp-content/uploads/2023/07/image-62-1024x576.png.webp",
+      "note": "sehr cool, lässig ahahahaha"
+    }
+  ]
+}

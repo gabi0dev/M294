@@ -1,0 +1,112 @@
+:root {
+  --bg: #11131c;
+  --surface: #1a1d2b;
+  --surface-2: #242838;
+  --text: #eceef5;
+  --muted: #9098ad;
+  --accent: #7c5cff;
+  --danger: #ff5d6c;
+  --border: #2e3346;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.logo { font-size: 1.3rem; font-weight: 700; }
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+.nav-links a.active, .nav-links a:hover { color: var(--accent); }
+
+main { max-width: 900px; margin: 0 auto; padding: 2rem; }
+h1 { font-weight: 700; }
+
+/* Galerie als Raster (Grid) */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.game-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.game-cover {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.game-cover-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--surface-2);
+}
+.game-info { padding: 1rem; }
+.game-info h3 { margin: 0 0 0.3rem; font-size: 1.05rem; }
+.game-meta { color: var(--muted); font-size: 0.85rem; margin: 0.2rem 0; }
+.game-rating { color: #ffcc55; margin: 0.3rem 0; }
+.game-note { font-size: 0.9rem; color: var(--text); }
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn:hover { opacity: 0.9; }
+.btn-danger { background: var(--danger); }
+
+.game-actions { display: flex; gap: 0.5rem; margin-top: 0.8rem; }
+
+.game-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 450px;
+}
+.game-form label { display: flex; flex-direction: column; gap: 0.3rem; font-weight: 500; }
+.game-form input, .game-form textarea {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.5rem;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+.game-form textarea { min-height: 70px; resize: vertical; }
+
+.error { color: var(--danger); font-size: 0.9rem; margin: 0; }
