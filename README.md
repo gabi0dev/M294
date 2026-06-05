@@ -1,4 +1,4 @@
-# Game Gallery
+# Game Gallery 
 
 Eine React-App zum Verwalten einer eigenen Spielesammlung mit voller
 CRUD-Funktion (anzeigen, hinzufügen, bearbeiten, löschen).
@@ -36,8 +36,8 @@ Es werden **zwei Terminals** benötigt:
 ## Projektstruktur
 
     src/
-      api/          REST-Aufrufe an den json-server (CRUD)
+      api/          REST-Aufrufe an den json-server 
       components/   Wiederverwendbare Bausteine (Navbar, Karte, Formular)
-      pages/        Die einzelnen Seiten (Galerie, Hinzufügen, Bearbeiten)
+      pages/        Die einzelnen Seiten 
       utils/        Hilfsfunktion zur Validierung
-    db.json         Datenbank des json-servers (die Spiele)
+    db.json         Datenbank des json-servers
