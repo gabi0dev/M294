@@ -5,7 +5,7 @@ CRUD-Funktion (anzeigen, hinzufügen, bearbeiten, löschen).
 
 ## Voraussetzungen
 - Node.js Version 18 oder höher
-- npm
+- npm (Note: Falls npm probleme verursacht wie "running scripts is disabled on this system" das liegt an der Execution Policy von PowerShell, die die Ausführung von Skripten blockiert. bitte diesen link folgen https://shorturl.at/flca6)
 
 ## Installation
 
@@ -17,7 +17,7 @@ CRUD-Funktion (anzeigen, hinzufügen, bearbeiten, löschen).
 
 Es werden **zwei Terminals** benötigt:
 
-1. **json-server** starten (die REST-API):
+1. **json-server** starten:
 
        npm run server
 
