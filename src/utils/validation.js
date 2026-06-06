@@ -5,7 +5,7 @@ export function validateGame({ title, rating }) {
   const errors = {};
 
   if (!title || title.trim() === "") {
-    errors.title = "Bitte gib einen Titel ein !!";
+    errors.title = "Bitte gib einen Titel ein.";
   }
 
   const numericRating = Number(rating);
