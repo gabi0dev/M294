@@ -1,7 +1,6 @@
 # Game Gallery 
 
-Eine React-App zum Verwalten einer eigenen Spielesammlung mit voller
-CRUD-Funktion (anzeigen, hinzufügen, bearbeiten, löschen).
+Eine React-App zum Verwalten einer eigenen Spielesammlung.
 
 ## Voraussetzungen
 - Node.js Version 18 oder höher
