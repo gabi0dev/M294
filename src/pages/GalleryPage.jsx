@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { getGames, deleteGame } from "../api/gamesApi";
 import GameCard from "../components/GameCard";
 
-// Startseite: zeigt alle Spiele (READ) und erlaubt das Löschen (DELETE).
+// Dieses file wurde mithilfe von Claude & ChatGPT korrigiert.
 function GalleryPage() {
   const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -21,7 +21,7 @@ function GalleryPage() {
     }
   }
 
-  // Spiele laden, sobald die Seite das erste Mal angezeigt wird
+
   useEffect(() => {
     loadGames();
   }, []);
@@ -30,7 +30,6 @@ function GalleryPage() {
     if (!window.confirm("Dieses Spiel wirklich löschen?")) return;
     try {
       await deleteGame(id);
-      // Gelöschtes Spiel aus der Liste entfernen
       setGames((prev) => prev.filter((g) => g.id !== id));
     } catch (err) {
       setError(err.message);

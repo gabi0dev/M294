@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { createGame } from "../api/gamesApi";
 import GameForm from "../components/GameForm";
 
-// Seite zum Hinzufügen eines neuen Spiels (CREATE).
+
 function AddGamePage() {
   const navigate = useNavigate();
   const [error, setError] = useState("");
@@ -11,7 +11,7 @@ function AddGamePage() {
   async function handleCreate(formData) {
     try {
       await createGame(formData);
-      navigate("/");   // zurück zur Galerie
+      navigate("/");
     } catch (err) {
       setError(err.message);
     }

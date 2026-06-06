@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-// Obere Navigationsleiste.
 function Navbar() {
   return (
     <nav className="navbar">
