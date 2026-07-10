@@ -39,3 +39,9 @@ Es werden **zwei Terminals** benötigt:
       pages/        Die einzelnen Seiten 
       utils/        Hilfsfunktion zur Validierung
     db.json         Datenbank des json-servers
+
+
+    ## Backend (M295)
+
+Das Backend liegt im Ordner [`backend/`](backend/) und ist ein eigenständiges
+Spring-Boot-Projekt … Details: siehe backend/README.md.
