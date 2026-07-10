@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: games-postgres
+    environment:
+      POSTGRES_USER: gamesUser
+      POSTGRES_PASSWORD: gamesPW
+      POSTGRES_DB: gamesdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - games-data:/var/lib/postgresql/data
+
+volumes:
+  games-data:
