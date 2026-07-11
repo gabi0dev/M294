@@ -42,5 +42,4 @@ Es werden **zwei Terminals** benötigt:
 
 
 ## Backend (M295)
-Das Backend liegt im Ordner [`backend/`](backend/) und ist ein eigenständiges
-Spring-Boot-Projekt … Details: siehe backend/README.md.
+Das Backend liegt im Ordner [`backend/`](backend/) und ist ein eigenständiges Projekt für das Modul 295 … Details: siehe backend/README.md.
